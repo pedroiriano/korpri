@@ -14,7 +14,6 @@ Route::get('/', [PagesController::class, 'index'])->name('home');
 
 Route::get('/profil/tentang-kami', [ProfilesController::class, 'about'])->name('about');
 Route::get('/profil/visi-misi', [ProfilesController::class, 'vision'])->name('vision');
-Route::get('/profil/landasan-hukum', [ProfilesController::class, 'legal'])->name('legal');
 Route::get('/profil/struktur-organisasi', [ProfilesController::class, 'organization'])->name('organization');
 Route::get('/profil/tupoksi', [ProfilesController::class, 'duty'])->name('duty');
 

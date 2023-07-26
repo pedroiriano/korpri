@@ -48,9 +48,8 @@
                 <li class="has-submenu parent-menu-item">
                     <a href="javascript:void(0)">Profil</a><span class="menu-arrow"></span>
                     <ul class="submenu">
-                        <li><a href="/profil/tentang-kami" class="sub-menu-item">Tentang</a></li>
+                        <li><a href="/profil/tentang-kami" class="sub-menu-item">Tentang Kami</a></li>
                         <li><a href="/profil/visi-misi" class="sub-menu-item">Visi dan Misi</a></li>
-                        <li><a href="/profil/landasan-hukum" class="sub-menu-item">Landasan Hukum</a></li>
                         <li><a href="/profil/struktur-organisasi" class="sub-menu-item">Struktur Organisasi</a></li>
                         <li><a href="/profil/tupoksi" class="sub-menu-item">Tupoksi</a></li>
                     </ul>
@@ -59,25 +58,12 @@
                 <li class="has-submenu parent-menu-item">
                     <a href="javascript:void(0)">Informasi</a><span class="menu-arrow"></span>
                     <ul class="submenu">
+                        <li><a href="/publikasi/berita" class="sub-menu-item">Berita</a></li>
+                        <li><a href="/publikasi/pengumuman" class="sub-menu-item">Pengumuman</a></li>
                         <li><a href="/informasi/produk" class="sub-menu-item">Dokumen Produk</a></li>
                         <li><a href="/informasi/program-unggulan" class="sub-menu-item">Program Unggulan</a></li>
                         <li><a href="/informasi/inovasi" class="sub-menu-item">Inovasi</a></li>
                         <li><a href="/informasi/agenda" class="sub-menu-item">Agenda</a></li>
-                    </ul>
-                </li>
-
-                <li class="has-submenu parent-parent-menu-item">
-                    <a href="javascript:void(0)">Publikasi</a><span class="menu-arrow"></span>
-                    <ul class="submenu">
-                        <li><a href="/publikasi/berita" class="sub-menu-item">Berita</a></li>
-                        <li><a href="/publikasi/pengumuman" class="sub-menu-item">Pengumuman</a></li>
-                        <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">Galeri</a><span class="submenu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="/publikasi/foto" class="sub-menu-item">Foto</a></li>
-                                <li><a href="/publikasi/video" class="sub-menu-item">Video</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="https://ppid.depok.go.id/" class="sub-menu-item" target="_blank">PPID</a></li>
                     </ul>
                 </li>
 
@@ -86,6 +72,14 @@
                     <ul class="submenu">
                         <li><a href="/layanan/semua" class="sub-menu-item">Layanan</a></li>
                         <li><a href="/layanan/regulasi" class="sub-menu-item">Regulasi</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu parent-parent-menu-item">
+                    <a href="javascript:void(0)">Galeri</a><span class="menu-arrow"></span>
+                    <ul class="submenu">
+                        <li><a href="/publikasi/foto" class="sub-menu-item">Foto</a></li>
+                        <li><a href="/publikasi/video" class="sub-menu-item">Video</a></li>
                     </ul>
                 </li>
 

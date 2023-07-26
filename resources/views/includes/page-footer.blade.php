@@ -45,17 +45,12 @@
                             <ul class="list-none footer-list mt-6">
                                 <li>
                                     <a href="{{ route('about') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
-                                        <i class="uil uil-angle-right-b me-1"></i> Tentang
+                                        <i class="uil uil-angle-right-b me-1"></i> Tentang Kami
                                     </a>
                                 </li>
                                 <li class="mt-[10px]">
                                     <a href="{{ route('vision') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
                                         <i class="uil uil-angle-right-b me-1"></i> Visi dan Misi
-                                    </a>
-                                </li>
-                                <li class="mt-[10px]">
-                                    <a href="{{ route('legal') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
-                                        <i class="uil uil-angle-right-b me-1"></i> Landasan Hukum
                                     </a>
                                 </li>
                                 <li class="mt-[10px]">
@@ -75,6 +70,16 @@
                             <h5 class="tracking-[1px] text-gray-100 font-semibold">Informasi</h5>
                             <ul class="list-none footer-list mt-6">
                                 <li>
+                                    <a href="{{ route('news') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
+                                        <i class="uil uil-angle-right-b me-1"></i> Berita
+                                    </a>
+                                </li>
+                                <li class="mt-[10px]">
+                                    <a href="{{ route('announcement') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
+                                        <i class="uil uil-angle-right-b me-1"></i> Pengumuman
+                                    </a>
+                                </li>
+                                <li class="mt-[10px]">
                                     <a href="{{ route('product') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
                                         <i class="uil uil-angle-right-b me-1"></i> Dokumen Produk
                                     </a>
@@ -98,37 +103,6 @@
                         </div>
 
                         <div class="lg:col-span-2 md:col-span-6">
-                            <h5 class="tracking-[1px] text-gray-100 font-semibold">Publikasi</h5>
-                            <ul class="list-none footer-list mt-6">
-                                <li>
-                                    <a href="{{ route('news') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
-                                        <i class="uil uil-angle-right-b me-1"></i> Berita
-                                    </a>
-                                </li>
-                                <li class="mt-[10px]">
-                                    <a href="{{ route('announcement') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
-                                        <i class="uil uil-angle-right-b me-1"></i> Pengumuman
-                                    </a>
-                                </li>
-                                <li class="mt-[10px]">
-                                    <a href="{{ route('photo') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
-                                        <i class="uil uil-angle-right-b me-1"></i> Galeri Foto
-                                    </a>
-                                </li>
-                                <li class="mt-[10px]">
-                                    <a href="{{ route('video') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
-                                        <i class="uil uil-angle-right-b me-1"></i> Galeri Video
-                                    </a>
-                                </li>
-                                <li class="mt-[10px]">
-                                    <a href="https://ppid.depok.go.id/" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out" target="_blank">
-                                        <i class="uil uil-angle-right-b me-1"></i> PPID
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="lg:col-span-2 md:col-span-6">
                             <h5 class="tracking-[1px] text-gray-100 font-semibold">Layanan</h5>
                             <ul class="list-none footer-list mt-6">
                                 <li>
@@ -139,6 +113,22 @@
                                 <li class="mt-[10px]">
                                     <a href="{{ route('regulation') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
                                         <i class="uil uil-angle-right-b me-1"></i> Regulasi
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="lg:col-span-2 md:col-span-6">
+                            <h5 class="tracking-[1px] text-gray-100 font-semibold">Galeri</h5>
+                            <ul class="list-none footer-list mt-6">
+                                <li>
+                                    <a href="{{ route('photo') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
+                                        <i class="uil uil-angle-right-b me-1"></i> Foto
+                                    </a>
+                                </li>
+                                <li class="mt-[10px]">
+                                    <a href="{{ route('video') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
+                                        <i class="uil uil-angle-right-b me-1"></i> Video
                                     </a>
                                 </li>
                             </ul>

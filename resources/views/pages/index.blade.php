@@ -39,7 +39,7 @@
 <!-- Start Widget -->
 <section class="relative py-16 bg-gray-50 dark:bg-slate-800">
     <div class="container">
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-[30px]">
             <div class="flex">
                 <div class="flex align-middle justify-center items-center min-w-[56px] h-[56px] bg-blue-korpri/5 border-2 border-blue-korpri/20 text-blue-korpri rounded-lg text-xl shadow-sm dark:shadow-gray-800">
                     <i class="uil uil-calendar-alt"></i>
@@ -63,19 +63,6 @@
                     </p>
                     <p class="text-slate-400 mt-1">
                         {{ $prayerName }} - {{ $pt }}
-                    </p>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="flex align-middle justify-center items-center min-w-[56px] h-[56px] bg-blue-korpri/5 border-2 border-blue-korpri/20 text-blue-korpri rounded-lg text-xl shadow-sm dark:shadow-gray-800">
-                    <i class="uil uil-cloud-sun"></i>
-                </div>
-                <div class="content ml-6">
-                    <p class="text-lg font-medium hover:text-blue-korpri">
-                        Cuaca Hari Ini
-                    </p>
-                    <p id="desc-weather" class="text-slate-400 mt-1">
-                        Berawan
                     </p>
                 </div>
             </div>
