@@ -20,7 +20,7 @@
         <div class="md:flex">
             <div class="relative lg:w-2/3 w-full -mt-32">
                 <div class="px-6 py-12 bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-800 text-center">
-                    <a class="bg-indigo-600/10 text-indigo-600 font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
+                    <a class="bg-blue-korpri/10 text-blue-korpri font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
                         Layanan
                     </a>
                     <h5 class="font-semibold text-2xl mt-5">
@@ -35,10 +35,10 @@
         <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
             <div class="lg:col-span-8 md:col-span-6">
                 <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                    <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
+                    <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
                         <div class="relative overflow-hidden text-transparent -m-3">
-                            <i data-feather="hexagon" class="h-24 w-24 fill-indigo-600/5 group-hover:fill-white/10 mx-auto"></i>
-                            <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-indigo-600 rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                            <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10 mx-auto"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-blue-korpri rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
                                 <i class="uil uil-building"></i>
                             </div>
                         </div>
@@ -52,10 +52,10 @@
                         </div>
                     </div>
 
-                    <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
+                    <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
                         <div class="relative overflow-hidden text-transparent -m-3">
-                            <i data-feather="hexagon" class="h-24 w-24 fill-indigo-600/5 group-hover:fill-white/10 mx-auto"></i>
-                            <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-indigo-600 rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                            <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10 mx-auto"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-blue-korpri rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
                                 <i class="uil uil-building"></i>
                             </div>
                         </div>
@@ -69,10 +69,10 @@
                         </div>
                     </div>
 
-                    <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
+                    <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
                         <div class="relative overflow-hidden text-transparent -m-3">
-                            <i data-feather="hexagon" class="h-24 w-24 fill-indigo-600/5 group-hover:fill-white/10 mx-auto"></i>
-                            <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-indigo-600 rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                            <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10 mx-auto"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-blue-korpri rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
                                 <i class="uil uil-building"></i>
                             </div>
                         </div>
@@ -92,27 +92,27 @@
                         <nav aria-label="Page navigation example">
                             <ul class="inline-flex items-center -space-x-px">
                                 <li>
-                                    <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-l-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                    <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-l-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-blue-korpri dark:hover:border-blue-korpri hover:bg-blue-korpri dark:hover:bg-blue-korpri">
                                         <i class="uil uil-angle-left text-[20px]"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">1</a>
+                                    <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-blue-korpri dark:hover:border-blue-korpri hover:bg-blue-korpri dark:hover:bg-blue-korpri">1</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">2</a>
+                                    <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-blue-korpri dark:hover:border-blue-korpri hover:bg-blue-korpri dark:hover:bg-blue-korpri">2</a>
                                 </li>
                                 <li>
-                                    <a href="#" aria-current="page" class="z-10 w-[40px] h-[40px] inline-flex justify-center items-center text-white bg-indigo-600 border border-indigo-600">3</a>
+                                    <a href="#" aria-current="page" class="z-10 w-[40px] h-[40px] inline-flex justify-center items-center text-white bg-blue-korpri border border-blue-korpri">3</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">4</a>
+                                    <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-blue-korpri dark:hover:border-blue-korpri hover:bg-blue-korpri dark:hover:bg-blue-korpri">4</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">5</a>
+                                    <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-blue-korpri dark:hover:border-blue-korpri hover:bg-blue-korpri dark:hover:bg-blue-korpri">5</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-r-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                    <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-r-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-blue-korpri dark:hover:border-blue-korpri hover:bg-blue-korpri dark:hover:bg-blue-korpri">
                                         <i class="uil uil-angle-right text-[20px]"></i>
                                     </a>
                                 </li>
@@ -129,7 +129,7 @@
                     </h5>
                     <div class="flex items-center justify-center mt-8">
                         <div class="ml-3">
-                            <a href="{{ route('service') }}" class="font-semibold hover:text-indigo-600" aria-selected="true">
+                            <a href="{{ route('service') }}" class="font-semibold hover:text-blue-korpri" aria-selected="true">
                                 Layanan
                             </a>
                         </div>
@@ -137,7 +137,7 @@
 
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="{{ route('regulation') }}" class="font-semibold hover:text-indigo-600" aria-selected="false">
+                            <a href="{{ route('regulation') }}" class="font-semibold hover:text-blue-korpri" aria-selected="false">
                                 Regulasi
                             </a>
                         </div>

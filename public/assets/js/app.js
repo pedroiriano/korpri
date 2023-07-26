@@ -211,35 +211,35 @@ try {
 /*********************/
 /* Dark & Light Mode */
 /*********************/
-try {
-    function changeTheme(e) {
-        e.preventDefault();
-        const htmlTag = document.getElementsByTagName("html")[0];
+// try {
+//     function changeTheme(e) {
+//         e.preventDefault();
+//         const htmlTag = document.getElementsByTagName("html")[0];
 
-        if (htmlTag.className.includes("dark")) {
-            htmlTag.className = "light";
-            localStorage.setItem("theme", "light");
-        } else {
-            htmlTag.className = "dark";
-            localStorage.setItem("theme", "dark");
-        }
-    }
+//         if (htmlTag.className.includes("dark")) {
+//             htmlTag.className = "light";
+//             localStorage.setItem("theme", "light");
+//         } else {
+//             htmlTag.className = "dark";
+//             localStorage.setItem("theme", "dark");
+//         }
+//     }
 
-    const switcher = document.getElementById("theme-mode");
-    switcher?.addEventListener("click", changeTheme);
+//     const switcher = document.getElementById("theme-mode");
+//     switcher?.addEventListener("click", changeTheme);
 
-    const chk = document.getElementById("chk");
+//     const chk = document.getElementById("chk");
 
-    chk.addEventListener("change", changeTheme);
+//     chk.addEventListener("change", changeTheme);
 
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-        const htmlTag = document.getElementsByTagName("html")[0];
-        htmlTag.className = savedTheme;
-    }
-} catch (err) {
+//     const savedTheme = localStorage.getItem("theme");
+//     if (savedTheme) {
+//         const htmlTag = document.getElementsByTagName("html")[0];
+//         htmlTag.className = savedTheme;
+//     }
+// } catch (err) {
 
-}
+// }
 
 /*********************/
 /*      WoW Js       */

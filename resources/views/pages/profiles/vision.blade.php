@@ -20,7 +20,7 @@
         <div class="md:flex">
             <div class="relative lg:w-2/3 w-full -mt-32">
                 <div class="px-6 py-12 bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-800 text-center">
-                    <a class="bg-indigo-600/10 text-indigo-600 font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
+                    <a class="bg-blue-korpri/10 text-blue-korpri font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
                         Profil
                     </a>
                     <h5 class="font-semibold text-2xl mt-5">
@@ -79,7 +79,7 @@
                     </h5>
                     <div class="flex items-center justify-center mt-8">
                         <div class="ml-3">
-                            <a href="/profil/tentang-kami" class="font-semibold hover:text-indigo-600" aria-selected="false">
+                            <a href="/profil/tentang-kami" class="font-semibold hover:text-blue-korpri" aria-selected="false">
                                 Tentang
                             </a>
                         </div>
@@ -87,7 +87,7 @@
                     
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="/profil/visi-misi" class="font-semibold hover:text-indigo-600" aria-selected="true">
+                            <a href="/profil/visi-misi" class="font-semibold hover:text-blue-korpri" aria-selected="true">
                                 Visi dan Misi
                             </a>
                         </div>
@@ -95,7 +95,7 @@
                     
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="/profil/landasan-hukum" class="font-semibold hover:text-indigo-600" aria-selected="false">
+                            <a href="/profil/landasan-hukum" class="font-semibold hover:text-blue-korpri" aria-selected="false">
                                 Landasan Hukum
                             </a>
                         </div>
@@ -103,7 +103,7 @@
 
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="/profil/struktur-organisasi" class="font-semibold hover:text-indigo-600" aria-selected="false">
+                            <a href="/profil/struktur-organisasi" class="font-semibold hover:text-blue-korpri" aria-selected="false">
                                 Struktur Organisasi
                             </a>
                         </div>
@@ -111,7 +111,7 @@
                     
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="/profil/tupoksi" class="font-semibold hover:text-indigo-600" aria-selected="false">
+                            <a href="/profil/tupoksi" class="font-semibold hover:text-blue-korpri" aria-selected="false">
                                 Tupoksi
                             </a>
                         </div>

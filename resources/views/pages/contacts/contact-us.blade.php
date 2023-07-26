@@ -20,7 +20,7 @@
         <div class="md:flex">
             <div class="relative lg:w-2/3 w-full -mt-32">
                 <div class="px-6 py-12 bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-800 text-center">
-                    <a class="bg-indigo-600/10 text-indigo-600 font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
+                    <a class="bg-blue-korpri/10 text-blue-korpri font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
                         Kontak
                     </a>
                     <h5 class="font-semibold text-2xl mt-5">
@@ -38,7 +38,7 @@
                     @if (!empty($generalInformations))
                         @foreach ($generalInformations as $generalInformation)
                             <div class="text-center px-6 mt-6">
-                                <div class="w-20 h-20 bg-indigo-600/5 text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                                <div class="w-20 h-20 bg-blue-korpri/5 text-blue-korpri rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
                                     <i class="uil uil-phone"></i>
                                 </div>
                                 <div class="content mt-7">
@@ -49,7 +49,7 @@
                                         Nomor Telepon {{ $shortWorkUnits }}.
                                     </p>
                                     <div class="mt-5">
-                                        <a href="tel:{{ $generalInformation['Telp'] }}" class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">
+                                        <a href="tel:{{ $generalInformation['Telp'] }}" class="btn btn-link text-blue-korpri hover:text-blue-korpri after:bg-blue-korpri duration-500 ease-in-out">
                                             {{ $generalInformation['Telp'] }}
                                         </a>
                                     </div>
@@ -57,7 +57,7 @@
                             </div>
 
                             <div class="text-center px-6 mt-6">
-                                <div class="w-20 h-20 bg-indigo-600/5 text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                                <div class="w-20 h-20 bg-blue-korpri/5 text-blue-korpri rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
                                     <i class="uil uil-envelope"></i>
                                 </div>
                                 <div class="content mt-7">
@@ -68,7 +68,7 @@
                                         Alamat Surat Elektronik {{ $shortWorkUnits }}
                                     </p>
                                     <div class="mt-5">
-                                        <a href="mailto:{{ $generalInformation['Email'] }}" class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">
+                                        <a href="mailto:{{ $generalInformation['Email'] }}" class="btn btn-link text-blue-korpri hover:text-blue-korpri after:bg-blue-korpri duration-500 ease-in-out">
                                             {{ $generalInformation['Email'] }}
                                         </a>
                                     </div>
@@ -76,7 +76,7 @@
                             </div>
 
                             <div class="text-center px-6 mt-6">
-                                <div class="w-20 h-20 bg-indigo-600/5 text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                                <div class="w-20 h-20 bg-blue-korpri/5 text-blue-korpri rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
                                     <i class="uil uil-map-marker"></i>
                                 </div>
                                 <div class="content mt-7">
@@ -88,7 +88,7 @@
                                     </p>
                                     <div class="mt-5">
                                         <a href="{{ $generalInformation['URLmaps'] }}"
-                                        data-type="iframe" loading="lazy" class="video-play-icon read-more lightbox btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">
+                                        data-type="iframe" loading="lazy" class="video-play-icon read-more lightbox btn btn-link text-blue-korpri hover:text-blue-korpri after:bg-blue-korpri duration-500 ease-in-out">
                                         Lihat di Google Map
                                     </a>
                                     </div>
@@ -106,7 +106,7 @@
                     </h5>
                     <div class="flex items-center justify-center mt-8">
                         <div class="ml-3">
-                            <a href="{{ route('important-contact') }}" class="font-semibold hover:text-indigo-600" aria-selected="false">
+                            <a href="{{ route('important-contact') }}" class="font-semibold hover:text-blue-korpri" aria-selected="false">
                                 Kontak Penting
                             </a>
                         </div>
@@ -114,7 +114,7 @@
 
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="{{ route('contact-us') }}" class="font-semibold hover:text-indigo-600" aria-selected="true">
+                            <a href="{{ route('contact-us') }}" class="font-semibold hover:text-blue-korpri" aria-selected="true">
                                 Hubungi Kami
                             </a>
                         </div>

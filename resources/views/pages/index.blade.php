@@ -41,11 +41,11 @@
     <div class="container">
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
             <div class="flex">
-                <div class="flex align-middle justify-center items-center min-w-[56px] h-[56px] bg-indigo-600/5 border-2 border-indigo-600/20 text-indigo-600 rounded-lg text-xl shadow-sm dark:shadow-gray-800">
+                <div class="flex align-middle justify-center items-center min-w-[56px] h-[56px] bg-blue-korpri/5 border-2 border-blue-korpri/20 text-blue-korpri rounded-lg text-xl shadow-sm dark:shadow-gray-800">
                     <i class="uil uil-calendar-alt"></i>
                 </div>
                 <div class="content ml-6">
-                    <p id="date" class="text-lg font-medium hover:text-indigo-600">
+                    <p id="date" class="text-lg font-medium hover:text-blue-korpri">
                         {{-- Full Date Function --}}
                     </p>
                     <p id="day" class="text-slate-400 mt-1">
@@ -54,11 +54,11 @@
                 </div>
             </div>
             <div class="flex">
-                <div class="flex align-middle justify-center items-center min-w-[56px] h-[56px] bg-indigo-600/5 border-2 border-indigo-600/20 text-indigo-600 rounded-lg text-xl shadow-sm dark:shadow-gray-800">
+                <div class="flex align-middle justify-center items-center min-w-[56px] h-[56px] bg-blue-korpri/5 border-2 border-blue-korpri/20 text-blue-korpri rounded-lg text-xl shadow-sm dark:shadow-gray-800">
                     <i class="uil uil-compass"></i>
                 </div>
                 <div class="content ml-6">
-                    <p id="clock" class="text-lg font-medium hover:text-indigo-600">
+                    <p id="clock" class="text-lg font-medium hover:text-blue-korpri">
                         {{-- Live Clock Function --}}
                     </p>
                     <p class="text-slate-400 mt-1">
@@ -67,11 +67,11 @@
                 </div>
             </div>
             <div class="flex">
-                <div class="flex align-middle justify-center items-center min-w-[56px] h-[56px] bg-indigo-600/5 border-2 border-indigo-600/20 text-indigo-600 rounded-lg text-xl shadow-sm dark:shadow-gray-800">
+                <div class="flex align-middle justify-center items-center min-w-[56px] h-[56px] bg-blue-korpri/5 border-2 border-blue-korpri/20 text-blue-korpri rounded-lg text-xl shadow-sm dark:shadow-gray-800">
                     <i class="uil uil-cloud-sun"></i>
                 </div>
                 <div class="content ml-6">
-                    <p class="text-lg font-medium hover:text-indigo-600">
+                    <p class="text-lg font-medium hover:text-blue-korpri">
                         Cuaca Hari Ini
                     </p>
                     <p id="desc-weather" class="text-slate-400 mt-1">
@@ -89,7 +89,7 @@
     <div class="grid grid-cols-1 mt-8">
         <ul class="md:w-fit w-full mx-auto flex-wrap justify-center text-center p-3 bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-md" id="myTab" data-tabs-toggle="#StarterContent" role="tablist">
             <li role="presentation" class="md:inline-block block md:w-fit w-full">
-                <button class="px-6 py-2 font-semibold rounded-md w-full hover:text-indigo-600 transition-all duration-500 ease-in-out" id="services-tab" data-tabs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="true">
+                <button class="px-6 py-2 font-semibold rounded-md w-full hover:text-blue-korpri transition-all duration-500 ease-in-out" id="services-tab" data-tabs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="true">
                     Layanan
                 </button>
             </li>
@@ -116,10 +116,10 @@
                     <div class="relative p-1 overflow-x-auto block w-full bg-white dark:bg-slate-900">
                         <div class="container">
                             <div class="grid md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
+                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
                                     <div class="relative overflow-hidden text-transparent -m-3">
-                                        <i data-feather="hexagon" class="h-24 w-24 fill-indigo-600/5 group-hover:fill-white/10 mx-auto"></i>
-                                        <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-indigo-600 rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                        <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10 mx-auto"></i>
+                                        <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-blue-korpri rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
                                             <i class="uil uil-university"></i>
                                         </div>
                                     </div>
@@ -133,10 +133,10 @@
                                     </div>
                                 </div>
 
-                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
+                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
                                     <div class="relative overflow-hidden text-transparent -m-3">
-                                        <i data-feather="hexagon" class="h-24 w-24 fill-indigo-600/5 group-hover:fill-white/10 mx-auto"></i>
-                                        <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-indigo-600 rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                        <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10 mx-auto"></i>
+                                        <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-blue-korpri rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
                                             <i class="uil uil-building"></i>
                                         </div>
                                     </div>
@@ -160,10 +160,10 @@
                     <div class="relative p-1 overflow-x-auto block w-full bg-white dark:bg-slate-900">
                         <div class="container">
                             <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
+                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
                                     <div class="relative overflow-hidden text-transparent -m-3">
-                                        <i data-feather="hexagon" class="h-24 w-24 fill-indigo-600/5 group-hover:fill-white/10"></i>
-                                        <div class="absolute top-2/4 -translate-y-2/4 left-8 text-indigo-600 rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                        <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10"></i>
+                                        <div class="absolute top-2/4 -translate-y-2/4 left-8 text-blue-korpri rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
                                             <i class="uil uil-books"></i>
                                         </div>
                                     </div>
@@ -177,10 +177,10 @@
                                     </div>
                                 </div>
 
-                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
+                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
                                     <div class="relative overflow-hidden text-transparent -m-3">
-                                        <i data-feather="hexagon" class="h-24 w-24 fill-indigo-600/5 group-hover:fill-white/10"></i>
-                                        <div class="absolute top-2/4 -translate-y-2/4 left-8 text-indigo-600 rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                        <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10"></i>
+                                        <div class="absolute top-2/4 -translate-y-2/4 left-8 text-blue-korpri rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
                                             <i class="uil uil-analysis"></i>
                                         </div>
                                     </div>
@@ -194,10 +194,10 @@
                                     </div>
                                 </div>
 
-                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
+                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
                                     <div class="relative overflow-hidden text-transparent -m-3">
-                                        <i data-feather="hexagon" class="h-24 w-24 fill-indigo-600/5 group-hover:fill-white/10"></i>
-                                        <div class="absolute top-2/4 -translate-y-2/4 left-8 text-indigo-600 rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                        <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10"></i>
+                                        <div class="absolute top-2/4 -translate-y-2/4 left-8 text-blue-korpri rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
                                             <i class="uil uil-brain"></i>
                                         </div>
                                     </div>
@@ -211,10 +211,10 @@
                                     </div>
                                 </div>
 
-                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
+                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
                                     <div class="relative overflow-hidden text-transparent -m-3">
-                                        <i data-feather="hexagon" class="h-24 w-24 fill-indigo-600/5 group-hover:fill-white/10"></i>
-                                        <div class="absolute top-2/4 -translate-y-2/4 left-8 text-indigo-600 rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                        <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10"></i>
+                                        <div class="absolute top-2/4 -translate-y-2/4 left-8 text-blue-korpri rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
                                             <i class="uil uil-calendar-alt"></i>
                                         </div>
                                     </div>
@@ -250,10 +250,10 @@
                                             <div class="absolute inset-0 bg-gradient-to-b to-slate-900 via-slate-900/50 from-transparent opacity-0 group-hover:opacity-100 duration-500 ease-in-out"></div>
                                             <div class="absolute bottom-0 left-0 right-0 p-6 -mb-96 group-hover:mb-0 duration-500 ease-in-out">
                                                 <div class="text-center">
-                                                    <a class="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
+                                                    <a class="bg-blue-korpri text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
                                                         Berita
                                                     </a>
-                                                    <a href="/berita/detail/{{ $latestNew['slug_title'] }}" class="text-white font-semibold hover:text-indigo-600 block text-lg mt-4 duration-500 ease-in-out">
+                                                    <a href="/berita/detail/{{ $latestNew['slug_title'] }}" class="text-white font-semibold hover:text-blue-korpri block text-lg mt-4 duration-500 ease-in-out">
                                                         {{ $latestNew['title'] }}
                                                     </a>
                                                 </div>
@@ -284,10 +284,10 @@
                                                         <div class="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out"></div>
                                                     </div>
                                                     <div class="md:w-[60%] md:pl-4 pt-4 md:pt-0">
-                                                        <a class="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
+                                                        <a class="bg-blue-korpri text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
                                                             Berita
                                                         </a>
-                                                        <a href="/berita/detail/{{ $latestNew['slug_title'] }}" class="block hover:text-indigo-600 text-lg font-semibold mt-3">
+                                                        <a href="/berita/detail/{{ $latestNew['slug_title'] }}" class="block hover:text-blue-korpri text-lg font-semibold mt-3">
                                                             {{ $latestNew['title'] }}
                                                         </a>
                                                         <span class="text-slate-400 block mt-3">
@@ -318,10 +318,10 @@
                                                         <div class="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out"></div>
                                                     </div>
                                                     <div class="md:w-[60%] md:pl-4 pt-4 md:pt-0">
-                                                        <a class="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
+                                                        <a class="bg-blue-korpri text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
                                                             Berita
                                                         </a>
-                                                        <a href="/berita/detail/{{ $new['slug_title'] }}" class="block hover:text-indigo-600 text-lg font-semibold mt-3">
+                                                        <a href="/berita/detail/{{ $new['slug_title'] }}" class="block hover:text-blue-korpri text-lg font-semibold mt-3">
                                                             {{ $new['title'] }}
                                                         </a>
                                                         <span class="text-slate-400 block mt-3">
@@ -355,7 +355,7 @@
                                         <div class="flex items-center">
                                             <img loading="lazy" src="https://cms.depok.go.id/upload/{{ $announcement['lampiran'] }}" class="md:h-28 h-20 rounded-md shadow dark:shadow-gray-800" alt="Announcement">
                                             <div class="ml-3">
-                                                <a href="/pengumuman/detail/{{ $announcement['slug_title'] }}" class="font-semibold hover:text-indigo-600">
+                                                <a href="/pengumuman/detail/{{ $announcement['slug_title'] }}" class="font-semibold hover:text-blue-korpri">
                                                     {{ $announcement['title'] }}
                                                 </a>
                                                 <p class="text-sm text-slate-400 mt-1">
@@ -396,7 +396,7 @@
                 </p>
             </div>
             <div class="lg:col-span-4 md:col-span-6 md:text-right hidden md:block">
-                <a href="https://berita.depok.go.id/" class="btn btn-link text-slate-400 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out" target="_blank">
+                <a href="https://berita.depok.go.id/" class="btn btn-link text-slate-400 hover:text-blue-korpri after:bg-blue-korpri duration-500 ease-in-out" target="_blank">
                     Semua Berita <i class="uil uil-arrow-right align-middle"></i>
                 </a>
             </div>
@@ -420,7 +420,7 @@
                                         @endif
                                     </div>
                                     <div class="p-6 flex flex-col lg:h-56 justify-center">
-                                        <a href="{{ $cityNew['link'] }}" class="title h5 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out" target="_blank">
+                                        <a href="{{ $cityNew['link'] }}" class="title h5 text-lg font-medium hover:text-blue-korpri duration-500 ease-in-out" target="_blank">
                                             {{ $cityNew['title'] }}
                                         </a>
                                         <div class="my-auto">
@@ -429,7 +429,7 @@
                                             </p>
                                         </div>
                                         <div class="mt-4">
-                                            <a href="{{ $cityNew['link'] }}" class="btn btn-link font-normal hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out" target="_blank">
+                                            <a href="{{ $cityNew['link'] }}" class="btn btn-link font-normal hover:text-blue-korpri after:bg-blue-korpri duration-500 ease-in-out" target="_blank">
                                                 Selengkapnya <i class="uil uil-arrow-right"></i>
                                             </a>
                                         </div>
@@ -470,7 +470,7 @@
                                     <img loading="lazy" src="{{ asset('assets/images/page/announcement.jpg') }}" class="h-16 rounded-md shadow dark:shadow-gray-800" alt="Announcement">
                                 @endif
                                 <div class="ml-3">
-                                    <a href="https://depok.go.id/pengumuman/{{ $cityAnnouncement['url'] }}" class="font-semibold hover:text-indigo-600" target="_blank">
+                                    <a href="https://depok.go.id/pengumuman/{{ $cityAnnouncement['url'] }}" class="font-semibold hover:text-blue-korpri" target="_blank">
                                         {{ $cityAnnouncement['nama'] }}
                                     </a>
                                     <p class="text-sm text-slate-400">
@@ -494,22 +494,22 @@
                     </h5>
                     <ul class="list-none text-center mt-8">
                         <li class="inline">
-                            <a href="https://www.facebook.com/PemerintahKotaDepok" class="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600" target="_blank">
+                            <a href="https://www.facebook.com/PemerintahKotaDepok" class="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-blue-korpri hover:text-white hover:bg-blue-korpri" target="_blank">
                                 <i data-feather="facebook" class="h-4 w-4"></i>
                             </a>
                         </li>
                         <li class="inline">
-                            <a href="https://www.instagram.com/pemkotdepok" class="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600" target="_blank">
+                            <a href="https://www.instagram.com/pemkotdepok" class="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-blue-korpri hover:text-white hover:bg-blue-korpri" target="_blank">
                                 <i data-feather="instagram" class="h-4 w-4"></i>
                             </a>
                         </li>
                         <li class="inline">
-                            <a href="https://twitter.com/pemkotdepok" class="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600" target="_blank">
+                            <a href="https://twitter.com/pemkotdepok" class="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-blue-korpri hover:text-white hover:bg-blue-korpri" target="_blank">
                                 <i data-feather="twitter" class="h-4 w-4"></i>
                             </a>
                         </li>
                         <li class="inline">
-                            <a href="https://www.youtube.com/@kominfodepok" class="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600" target="_blank">
+                            <a href="https://www.youtube.com/@kominfodepok" class="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-blue-korpri hover:text-white hover:bg-blue-korpri" target="_blank">
                                 <i data-feather="youtube" class="h-4 w-4"></i>
                             </a>
                         </li>
@@ -540,7 +540,7 @@
                     @foreach ($externalLinks as $externalLink)
                         <div class="tiny-slide">
                             <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800 hover:shadow-lg dark:hover:shadow-gray-800 duration-500 ease-in-out m-2 mb-5">
-                                <div class="py-10 bg-gradient-to-r to-violet-600/70 from-indigo-600/70"></div>
+                                <div class="py-10 bg-gradient-to-r to-violet-600/70 from-blue-korpri/70"></div>
                                 <div class="p-6 pt-0 -mt-10 text-center">
                                     <a href="{{ $externalLink['URLMenu'] }}">
                                         @if (!empty($externalLink['ImageMenu']))

@@ -29,7 +29,7 @@
                             <div class="grid grid-cols-1 mt-8">
                                 <ul class="md:w-fit w-full flex-wrap justify-center text-center p-3 bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-md" id="myTab" data-tabs-toggle="#StarterContent" role="tablist">
                                     <li role="presentation" class="md:inline-block block md:w-fit w-full">
-                                        <button class="px-6 py-2 font-semibold rounded-md w-full hover:text-indigo-600 transition-all duration-500 ease-in-out" id="detail-tab" data-tabs-target="#detail" type="button" role="tab" aria-controls="detail" aria-selected="true">
+                                        <button class="px-6 py-2 font-semibold rounded-md w-full hover:text-blue-korpri transition-all duration-500 ease-in-out" id="detail-tab" data-tabs-target="#detail" type="button" role="tab" aria-controls="detail" aria-selected="true">
                                             Detail
                                         </button>
                                     </li>
@@ -53,7 +53,7 @@
                                                 </div>
                                                 <div class="ml-3">
                                                     <h6 class="text-lg font-semibold">
-                                                        <a class="hover:text-indigo-600 duration-500 ease-in-out">
+                                                        <a class="hover:text-blue-korpri duration-500 ease-in-out">
                                                             Admin
                                                         </a>
                                                     </h6>

@@ -9,7 +9,7 @@
     @yield('content')
     @include('includes.landing-footer')
     @include('includes.landing-top')
-    @include('includes.landing-switcher')
+    {{-- @include('includes.landing-switcher') --}}
     @include('includes.landing-js')
     @stack('js')
 </body>

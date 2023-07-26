@@ -9,7 +9,7 @@
     @yield('content')
     @include('includes.page-footer')
     @include('includes.page-top')
-    @include('includes.page-switcher')
+    {{-- @include('includes.page-switcher') --}}
     @include('includes.page-js')
     @stack('js')
 </body>

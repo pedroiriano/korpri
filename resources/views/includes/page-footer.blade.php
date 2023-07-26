@@ -16,22 +16,22 @@
                                 @foreach ($generalInformations as $generalInformation)
                                     <ul class="list-none mt-6">
                                         <li class="inline">
-                                            <a href="{{ $generalInformation['Facebook'] }}" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                            <a href="{{ $generalInformation['Facebook'] }}" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-blue-korpri dark:hover:border-blue-korpri hover:bg-blue-korpri dark:hover:bg-blue-korpri">
                                                 <i class="uil uil-facebook-f align-middle" title="facebook"></i>
                                             </a>
                                         </li>
                                         <li class="inline">
-                                            <a href="{{ $generalInformation['Instagram'] }}" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                            <a href="{{ $generalInformation['Instagram'] }}" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-blue-korpri dark:hover:border-blue-korpri hover:bg-blue-korpri dark:hover:bg-blue-korpri">
                                                 <i class="uil uil-instagram align-middle" title="instagram"></i>
                                             </a>
                                         </li>
                                         <li class="inline">
-                                            <a href="{{ $generalInformation['Twitter'] }}" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                            <a href="{{ $generalInformation['Twitter'] }}" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-blue-korpri dark:hover:border-blue-korpri hover:bg-blue-korpri dark:hover:bg-blue-korpri">
                                                 <i class="uil uil-twitter align-middle" title="twitter"></i>
                                             </a>
                                         </li>
                                         <li class="inline">
-                                            <a href="{{ $generalInformation['Youtube'] }}" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                            <a href="{{ $generalInformation['Youtube'] }}" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-blue-korpri dark:hover:border-blue-korpri hover:bg-blue-korpri dark:hover:bg-blue-korpri">
                                                 <i class="uil uil-youtube align-middle" title="youtube"></i>
                                             </a>
                                         </li>
