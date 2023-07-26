@@ -86,13 +86,13 @@
                 </button>
             </li>
             <li role="presentation" class="md:inline-block block md:w-fit w-full">
-                <button class="px-6 py-2 font-semibold rounded-md w-full transition-all duration-500 ease-in-out" id="local-news-tab" data-tabs-target="#local-news" type="button" role="tab" aria-controls="local-news" aria-selected="false">
-                    Berita
+                <button class="px-6 py-2 font-semibold rounded-md w-full transition-all duration-500 ease-in-out" id="photo-gallery-tab" data-tabs-target="#photo-gallery" type="button" role="tab" aria-controls="photo-gallery" aria-selected="false">
+                    Galeri Foto
                 </button>
             </li>
             <li role="presentation" class="md:inline-block block md:w-fit w-full">
-                <button class="px-6 py-2 font-semibold rounded-md w-full transition-all duration-500 ease-in-out" id="local-announcements-tab" data-tabs-target="#local-announcements" type="button" role="tab" aria-controls="local-announcements" aria-selected="false">
-                    Pengumuman
+                <button class="px-6 py-2 font-semibold rounded-md w-full transition-all duration-500 ease-in-out" id="video-gallery-tab" data-tabs-target="#video-gallery" type="button" role="tab" aria-controls="video-gallery" aria-selected="false">
+                    Galeri Video
                 </button>
             </li>
         </ul>
@@ -220,142 +220,68 @@
                 </div>
             </div>
 
-            <div class="hidden" id="local-news" role="tabpanel" aria-labelledby="local-news-tab">
+            <div class="hidden" id="photo-gallery" role="tabpanel" aria-labelledby="photo-gallery-tab">
                 <div class="grid grid-cols-1">
                     <div class="relative p-1 overflow-x-auto block w-full bg-white dark:bg-slate-900">
                         <div class="container">
-                            <div class="grid lg:grid-cols-2 grid-cols-1 items-center mt-8 gap-4">
-                                <!-- Start Latest News -->
-                                @if (!empty($latestNews))
-                                    @foreach ($latestNews as $latestNew)
-                                        <div class="group relative overflow-hidden rounded-md md:flex hidden">
-                                            @if (!empty($latestNew['lampiran']))
-                                                <img loading="lazy" src="https://cms.depok.go.id/upload/{{ $latestNew['lampiran'] }}" class="group-hover:scale-105 duration-500 ease-in-out w-full" alt="News">
-                                            @else
-                                                <img loading="lazy" src="{{ asset('assets/images/page/news.jpg') }}" class="group-hover:scale-105 duration-500 ease-in-out" alt="News">
-                                            @endif
-                                            <div class="absolute inset-0 bg-gradient-to-b to-slate-900 via-slate-900/50 from-transparent opacity-0 group-hover:opacity-100 duration-500 ease-in-out"></div>
-                                            <div class="absolute bottom-0 left-0 right-0 p-6 -mb-96 group-hover:mb-0 duration-500 ease-in-out">
-                                                <div class="text-center">
-                                                    <a class="bg-blue-korpri text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
-                                                        Berita
-                                                    </a>
-                                                    <a href="/berita/detail/{{ $latestNew['slug_title'] }}" class="text-white font-semibold hover:text-blue-korpri block text-lg mt-4 duration-500 ease-in-out">
-                                                        {{ $latestNew['title'] }}
-                                                    </a>
-                                                </div>
+                            <div class="grid lg:grid-cols-3 grid-cols-2 items-center mt-8 gap-4">
+                                <!-- Start Photo Gallery -->
+                                @if(!empty($galleries))
+                                    @php
+                                        $photoCounter = 1;
+                                    @endphp
+                                    @foreach($galleries as $item)
+                                        @if($item['MediaType'] === 'FL02')
+                                            <div class="group relative block overflow-hidden transition-all duration-500">
+                                                <a href="https://cms.depok.go.id/upload/gallery/{{ $item['Media'] }}" class="lightbox transition-all duration-500 group-hover:scale-105" title="{{ $item['Title'] }}">
+                                                    <img loading="lazy" src="https://cms.depok.go.id/upload/gallery/{{ $item['Media'] }}" class="" alt="{{ $item['Title'] }}">
+                                                </a>
                                             </div>
-                                        </div>
+                                        @endif
+                                        @if ($photoCounter == 6)
+                                            @break;
+                                        @endif
+                                        @php
+                                            $photoCounter = $photoCounter + 1;
+                                        @endphp
                                     @endforeach
                                 @else
                                     Koneksi API Terputus
                                 @endif
-                                <!-- End Latest News -->
-
-                                <div>
-                                    <div class="grid grid-cols-1 gap-4">
-                                        <!-- Start Latest News on Mobile -->
-                                        @if (!empty($latestNews))
-                                            @foreach ($latestNews as $latestNew)
-                                                <div class="group items-center relative overflow-hidden md:hidden">
-                                                    @php
-                                                        $publishDate = $Carbon::parse($latestNew['tgl_publish']);
-                                                        $publishDate = $publishDate->format('d-m-Y');
-                                                    @endphp
-                                                    <div class="md:w-[40%] relative overflow-hidden rounded-md">
-                                                        @if (!empty($latestNew['lampiran']))
-                                                            <img loading="lazy" src="https://cms.depok.go.id/upload/{{ $latestNew['lampiran'] }}" class="group-hover:scale-105 duration-500 ease-in-out w-full" alt="News">
-                                                        @else
-                                                            <img loading="lazy" src="{{ asset('assets/images/page/news.jpg') }}" class="group-hover:scale-105 duration-500 ease-in-out" alt="News">
-                                                        @endif
-                                                        <div class="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out"></div>
-                                                    </div>
-                                                    <div class="md:w-[60%] md:pl-4 pt-4 md:pt-0">
-                                                        <a class="bg-blue-korpri text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
-                                                            Berita
-                                                        </a>
-                                                        <a href="/berita/detail/{{ $latestNew['slug_title'] }}" class="block hover:text-blue-korpri text-lg font-semibold mt-3">
-                                                            {{ $latestNew['title'] }}
-                                                        </a>
-                                                        <span class="text-slate-400 block mt-3">
-                                                            <i class="uil uil-calendar-alt"></i> {{ $publishDate }}
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            @endforeach
-                                        @else
-                                            Koneksi API Terputus
-                                        @endif
-                                        <!-- End Latest News on Mobile -->
-
-                                        <!-- Start News -->
-                                        @if (!empty($news))
-                                            @foreach ($news as $new)
-                                                <div class="group md:flex items-center relative overflow-hidden">
-                                                    @php
-                                                        $publishDate = $Carbon::parse($new['tgl_publish']);
-                                                        $publishDate = $publishDate->format('d-m-Y');
-                                                    @endphp
-                                                    <div class="md:w-[40%] relative overflow-hidden rounded-md">
-                                                        @if (!empty($new['lampiran']))
-                                                            <img loading="lazy" src="https://cms.depok.go.id/upload/{{ $new['lampiran'] }}" class="group-hover:scale-105 duration-500 ease-in-out w-full" alt="News">
-                                                        @else
-                                                            <img loading="lazy" src="{{ asset('assets/images/page/news.jpg') }}" class="group-hover:scale-105 duration-500 ease-in-out" alt="News">
-                                                        @endif
-                                                        <div class="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out"></div>
-                                                    </div>
-                                                    <div class="md:w-[60%] md:pl-4 pt-4 md:pt-0">
-                                                        <a class="bg-blue-korpri text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
-                                                            Berita
-                                                        </a>
-                                                        <a href="/berita/detail/{{ $new['slug_title'] }}" class="block hover:text-blue-korpri text-lg font-semibold mt-3">
-                                                            {{ $new['title'] }}
-                                                        </a>
-                                                        <span class="text-slate-400 block mt-3">
-                                                            <i class="uil uil-calendar-alt"></i> {{ $publishDate }}
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            @endforeach
-                                        @else
-                                            Koneksi API Terputus
-                                        @endif
-                                        <!-- End News -->
-                                    </div>
-                                </div>
+                                <!-- End Photo Gallery -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="hidden" id="local-announcements" role="tabpanel" aria-labelledby="local-announcements-tab">
+            <div class="hidden" id="video-gallery" role="tabpanel" aria-labelledby="video-gallery-tab">
                 <div class="grid grid-cols-1">
                     <div class="relative p-1 overflow-x-auto block w-full bg-white dark:bg-slate-900">
                         <div class="container">
-                            <div class="grid md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                                @if (!empty($announcements))
+                            <div class="grid md:grid-cols-3 grid-cols-2 mt-8 gap-[30px]">
+                                @if(!empty($galleries))
                                     @php
-                                        $count = 0;
+                                        $videoCounter = 1;
                                     @endphp
-                                    @foreach ($announcements as $announcement)
-                                        <div class="flex items-center">
-                                            <img loading="lazy" src="https://cms.depok.go.id/upload/{{ $announcement['lampiran'] }}" class="md:h-28 h-20 rounded-md shadow dark:shadow-gray-800" alt="Announcement">
-                                            <div class="ml-3">
-                                                <a href="/pengumuman/detail/{{ $announcement['slug_title'] }}" class="font-semibold hover:text-blue-korpri">
-                                                    {{ $announcement['title'] }}
+                                    @foreach($galleries as $item)
+                                        @if($item['MediaType'] === 'FL01')
+                                            <?php
+                                                $link = $item['URL'];
+                                                $videoId = substr(str_replace('https://www.youtube.com/watch?v=', '', $link), 0, 11);
+                                            ?>
+                                            <div class="group relative block overflow-hidden transition-all duration-500">
+                                                <a href="" data-type="youtube" data-id="{{ $videoId }}" class="lightbox transition-all duration-500 group-hover:scale-105" title="{{ $item['Title'] }}">
+                                                    <img loading="lazy" src="https://cms.depok.go.id/upload/gallery/{{ $item['Media'] }}" class="" alt="{{ $item['Title'] }}">
                                                 </a>
-                                                <p class="text-sm text-slate-400 mt-1">
-                                                    {!! $announcement['content'] !!}
-                                                </p>
                                             </div>
-                                        </div>
-                                        @php
-                                            $count++;
-                                        @endphp
-                                        @if ($count == 6)
-                                            @break
                                         @endif
+                                        @if ($videoCounter == 6)
+                                            @break;
+                                        @endif
+                                        @php
+                                            $videoCounter = $videoCounter + 1;
+                                        @endphp
                                     @endforeach
                                 @else
                                     Koneksi API Terputus
@@ -376,14 +302,14 @@
         <div class="grid md:grid-cols-12 grid-cols-1 pb-8 items-end">
             <div class="lg:col-span-8 md:col-span-6 md:text-left text-center">
                 <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
-                    Berita dan Pengumuman Pemerintah Kota Depok
+                    Berita dan Pengumuman
                 </h3>
                 <p class="text-slate-400 max-w-xl">
-                    Dapatkan informasi seputar Pemerintah Kota Depok yang Anda perlukan di sini.
+                    Dapatkan informasi seputar Korpri Kota Depok yang Anda perlukan di sini.
                 </p>
             </div>
             <div class="lg:col-span-4 md:col-span-6 md:text-right hidden md:block">
-                <a href="https://berita.depok.go.id/" class="btn btn-link text-slate-400 hover:text-blue-korpri after:bg-blue-korpri duration-500 ease-in-out" target="_blank">
+                <a href="{{ route('news') }}" class="btn btn-link text-slate-400 hover:text-blue-korpri after:bg-blue-korpri duration-500 ease-in-out">
                     Semua Berita <i class="uil uil-arrow-right align-middle"></i>
                 </a>
             </div>
@@ -392,43 +318,34 @@
         <div class="grid md:grid-cols-12 grid-cols-1 mt-8 gap-[30px]">
             <div class="lg:col-span-8 md:col-span-6">
                 <div class="grid grid-cols-1 gap-[30px]">
-                    @if (!empty($cityNews))
-                    @php
-                        $count = 0;
-                    @endphp
-                        @foreach ($cityNews as $cityNew)
+                    @if (!empty($news))
+                        @foreach ($news as $new)
                             <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
                                 <div class="lg:flex relative">
                                     <div class="relative md:shrink-0">
-                                        @if (!empty($cityNew['image']))
-                                            <img loading="lazy" class="h-full w-full object-cover lg:w-52 lg:h-56" src="{{ $cityNew['image'] }}" alt="News">
+                                        @if (!empty($new['lampiran']))
+                                            <img loading="lazy" class="h-full w-full object-cover lg:w-52 lg:h-56" src="https://cms.depok.go.id/upload/{{ $new['lampiran'] }}" alt="News">
                                         @else
                                             <img loading="lazy" class="h-full w-full object-cover lg:w-52 lg:h-56" src="{{ asset('assets/images/page/news.jpg') }}" alt="News">
                                         @endif
                                     </div>
                                     <div class="p-6 flex flex-col lg:h-56 justify-center">
-                                        <a href="{{ $cityNew['link'] }}" class="title h5 text-lg font-medium hover:text-blue-korpri duration-500 ease-in-out" target="_blank">
-                                            {{ $cityNew['title'] }}
+                                        <a href="/berita/detail/{{ $new['slug_title'] }}" class="title h5 text-lg font-medium hover:text-blue-korpri duration-500 ease-in-out">
+                                            {{ $new['title'] }}
                                         </a>
                                         <div class="my-auto">
                                             <p class="text-slate-400 mt-3">
-                                                {!! $string_limit($cityNew['body'], 155) !!}
+                                                {!! $string_limit($new['content'], 155) !!}
                                             </p>
                                         </div>
                                         <div class="mt-4">
-                                            <a href="{{ $cityNew['link'] }}" class="btn btn-link font-normal hover:text-blue-korpri after:bg-blue-korpri duration-500 ease-in-out" target="_blank">
+                                            <a href="/berita/detail/{{ $new['slug_title'] }}" class="btn btn-link font-normal hover:text-blue-korpri after:bg-blue-korpri duration-500 ease-in-out">
                                                 Selengkapnya <i class="uil uil-arrow-right"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            @php
-                                $count++;
-                            @endphp
-                            @if ($count == 3)
-                                @break
-                            @endif
                         @endforeach
                     @else
                         Koneksi API Terputus

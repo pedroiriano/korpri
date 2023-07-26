@@ -14,7 +14,6 @@ class PublicationsController extends Controller
     public function photo()
     {
         $ch = curl_init();
-        // curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/GetGallery?siteId='.config("constants.siteId").'&status=ST01&kanalType=K001&limit=3&offset=&categoryId=659&slug=&key=');
         curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/GetGallery?siteId='.config("constants.siteId").'&status=ST01&kanalType=K001&limit=&offset=&categoryId=&slug=&key=');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
@@ -35,7 +34,6 @@ class PublicationsController extends Controller
     public function video()
     {
         $ch = curl_init();
-        // curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/GetGallery?siteId='.config("constants.siteId").'&status=ST01&kanalType=K001&limit=&offset=&categoryId=661&slug=&key=');
         curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/GetGallery?siteId='.config("constants.siteId").'&status=ST01&kanalType=K001&limit=&offset=&categoryId=&slug=&key=');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
