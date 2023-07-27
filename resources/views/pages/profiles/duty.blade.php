@@ -118,14 +118,6 @@
 
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="/profil/landasan-hukum" class="font-semibold hover:text-blue-korpri" aria-selected="false">
-                                Landasan Hukum
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-center mt-4">
-                        <div class="ml-3">
                             <a href="/profil/struktur-organisasi" class="font-semibold hover:text-blue-korpri" aria-selected="false">
                                 Struktur Organisasi
                             </a>
