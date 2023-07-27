@@ -175,8 +175,26 @@
 
             <div class="lg:col-span-4 md:col-span-6">
                 <div class="sticky top-20">
-                    <h5 class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center mt-8">Informasi</h5>
+                    <h5 class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center mt-8">
+                        Informasi
+                    </h5>
                     <div class="flex items-center justify-center mt-8">
+                        <div class="ml-3">
+                            <a href="/publikasi/berita" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                                Berita
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-center mt-4">
+                        <div class="ml-3">
+                            <a href="/publikasi/pengumuman" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                                Pengumuman
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
                             <a href="/informasi/produk" class="font-semibold hover:text-blue-korpri" aria-selected="false">
                                 Dokumen Produk

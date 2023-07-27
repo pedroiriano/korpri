@@ -22,7 +22,7 @@
             <div class="relative lg:w-2/3 w-full -mt-32">
                 <div class="px-6 py-12 bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-800 text-center">
                     <a class="bg-blue-korpri/10 text-blue-korpri font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">
-                        Publikasi
+                        Informasi
                     </a>
                     <h5 class="font-semibold text-2xl mt-5">
                         Pengumuman {{ $shortWorkUnits }}
@@ -79,7 +79,7 @@
             <div class="lg:col-span-4 md:col-span-6">
                 <div class="sticky top-20">
                     <h5 class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center mt-8">
-                        Publikasi
+                        Informasi
                     </h5>
                     <div class="flex items-center justify-center mt-8">
                         <div class="ml-3">
@@ -96,27 +96,35 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="/publikasi/foto" class="font-semibold hover:text-blue-korpri" aria-selected="false">
-                                Galeri Foto
+                            <a href="/informasi/produk" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                                Dokumen Produk
                             </a>
                         </div>
                     </div>
 
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="/publikasi/video" class="font-semibold hover:text-blue-korpri" aria-selected="false">
-                                Galeri Video
+                            <a href="/informasi/program-unggulan" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                                Program Unggulan
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="https://ppid.depok.go.id/" class="font-semibold hover:text-blue-korpri" target="_blank" aria-selected="false">
-                                PPID
+                            <a href="/informasi/inovasi" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                                Inovasi
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center mt-4">
+                        <div class="ml-3">
+                            <a href="/informasi/agenda" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                                Agenda
                             </a>
                         </div>
                     </div>

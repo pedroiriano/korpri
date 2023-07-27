@@ -305,7 +305,7 @@
                     Berita dan Pengumuman
                 </h3>
                 <p class="text-slate-400 max-w-xl">
-                    Dapatkan informasi seputar Korpri Kota Depok yang Anda perlukan di sini.
+                    Dapatkan informasi seputar KORPRI Kota Depok yang Anda perlukan di sini.
                 </p>
             </div>
             <div class="lg:col-span-4 md:col-span-6 md:text-right hidden md:block">
