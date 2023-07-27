@@ -1,4 +1,4 @@
-@extends('layouts.page')
+@extends('layouts.detail')
 
 @section('content')
 @inject('Carbon', 'Carbon\Carbon')

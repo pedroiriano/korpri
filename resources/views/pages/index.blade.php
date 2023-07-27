@@ -358,27 +358,27 @@
                     <h5 class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center">
                         Pengumuman
                     </h5>
-                    @if (!empty($cityAnnouncements))
+                    @if (!empty($announcements))
                     @php
                         $count = 0;
                     @endphp
-                        @foreach ($cityAnnouncements as $cityAnnouncement)
+                        @foreach ($announcements as $announcement)
                             <div class="flex items-center mt-8">
                                 @php
-                                    $cityAnnouncementDate = $Carbon::parse($cityAnnouncement['created_at']);
-                                    $cityAnnouncementDate = $cityAnnouncementDate->format('d-m-Y');
+                                    $announcementDate = $Carbon::parse($announcement['created_at']);
+                                    $announcementDate = $announcementDate->format('d-m-Y');
                                 @endphp
-                                @if (!empty($cityAnnouncement['imageName']))
-                                    <img loading="lazy" src="https://depok.go.id/storage/uploads/sliders/{{ $cityAnnouncement['imageName'] }}" class="h-16 rounded-md shadow dark:shadow-gray-800" alt="Announcement">
+                                @if (!empty($announcement['lampiran']))
+                                    <img loading="lazy" src="https://cms.depok.go.id/upload/{{ $announcement['lampiran'] }}" class="h-16 rounded-md shadow dark:shadow-gray-800" alt="Announcement">
                                 @else
                                     <img loading="lazy" src="{{ asset('assets/images/page/announcement.jpg') }}" class="h-16 rounded-md shadow dark:shadow-gray-800" alt="Announcement">
                                 @endif
                                 <div class="ml-3">
-                                    <a href="https://depok.go.id/pengumuman/{{ $cityAnnouncement['url'] }}" class="font-semibold hover:text-blue-korpri" target="_blank">
-                                        {{ $cityAnnouncement['nama'] }}
+                                    <a href="/pengumuman/detail/{{ $announcement['slug_title'] }}" class="font-semibold hover:text-blue-korpri">
+                                        {{ $announcement['title'] }}
                                     </a>
                                     <p class="text-sm text-slate-400">
-                                        {{ $cityAnnouncementDate }}
+                                        {{ $announcementDate }}
                                     </p>
                                 </div>
                             </div>
