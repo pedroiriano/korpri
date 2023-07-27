@@ -38,10 +38,21 @@ class AppServiceProvider extends ServiceProvider
         curl_setopt($ch, CURLOPT_TIMEOUT, 10);
         $httpCode = curl_getinfo($ch , CURLINFO_HTTP_CODE);
         $response = curl_exec($ch);
+        
         if ($response === false)
+        {
             $response = curl_error($ch);
+        }
+        else
+        {
+            $generalInformations = json_decode($response, true);
+        
+            if (json_last_error() !== JSON_ERROR_NONE)
+            {
+                $generalInformations = [];
+            }
+        }
         curl_close($ch);
-        $generalInformations = json_decode($response, TRUE);
 
         $pagesData = array(
             'generalInformations' => $generalInformations,

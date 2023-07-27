@@ -41,8 +41,8 @@
                     @if(!empty($about))
                         @foreach($about as $item)
                             <p class="text-slate-400 mb-4 mt-5">
-                                @if (strlen($item['Visi']) >= 120)
-                                    {{ strip_tags(substr($item['Visi'],0, 120). '...') }}
+                                @if (strlen($item['Visi']) >= 500)
+                                    {{ strip_tags(substr($item['Visi'],0, 500). '...') }}
                                 @else
                                     {{ $item['Visi'] }}
                                 @endif
@@ -52,23 +52,17 @@
                     <h5 class="text-md font-semibold text-left mt-8">
                         Misi:
                     </h5>
-                    <ol class="text-slate-400 mb-4 mt-5">
-                        <li class="mb-3">
-                            Meningkatkan Pembangunan Infrastruktur Berbasis Teknologi dan Berwawasan Lingkungan
-                        </li>
-                        <li class="mb-3">
-                            Meningkatkan Tata Kelola Pemerintahan dan Pelayanan Publik yang Modern dan Partisipatif
-                        </li>
-                        <li class="mb-3">
-                            Mewujudkan Masyarakat yang Religius dan Berbudaya Berbasis Kebhinekaan dan Ketahanan Keluarga
-                        </li>
-                        <li class="mb-3">
-                            Mewujudkan Masyarakat yang Sejahtera, Mandiri, dan Berdaya Saing
-                        </li>
-                        <li class="mb-3">
-                            Mewujudkan Kota yang Sehat, Aman, Tertib dan Nyaman
-                        </li>
-                    </ol>
+                    @if(!empty($about))
+                        @foreach($about as $item)
+                            <p class="text-slate-400 mb-4 mt-5">
+                                @if (strlen($item['Misi']) >= 500)
+                                    {!! strip_tags(substr($item['Misi'],0, 500). '...') !!}
+                                @else
+                                    {!! $item['Misi'] !!}
+                                @endif
+                            </p>
+                        @endforeach
+                    @endif
                 </div>
             </div>
 

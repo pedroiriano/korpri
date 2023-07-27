@@ -2,8 +2,8 @@
     @foreach ($generalInformations as $generalInformation)
         @php
             $domain = $generalInformation['Domain'];
-            preg_match('/([a-zA-Z0-9-]+)-dev/', $domain, $matches);
-            $result = $matches[1];
+            preg_match('/^([a-zA-Z0-9-]+?)(?:-dev)?\./', $domain, $matches);
+            $result = strtoupper(str_replace('-dev', '', $matches[1]));
         @endphp
         {{-- BEGIN::Google Search Meta --}}
         <meta charset="UTF-8" />
