@@ -49,7 +49,7 @@
                     <a href="javascript:void(0)">Profil</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <li><a href="/profil/tentang-kami" class="sub-menu-item">Tentang Kami</a></li>
-                        <li><a href="/profil/visi-misi" class="sub-menu-item">Visi dan Misi</a></li>
+                        {{-- <li><a href="/profil/visi-misi" class="sub-menu-item">Visi dan Misi</a></li> --}}
                         <li><a href="/profil/struktur-organisasi" class="sub-menu-item">Struktur Organisasi</a></li>
                         <li><a href="/profil/tupoksi" class="sub-menu-item">Tupoksi</a></li>
                     </ul>
@@ -60,20 +60,27 @@
                     <ul class="submenu">
                         <li><a href="/publikasi/berita" class="sub-menu-item">Berita</a></li>
                         <li><a href="/publikasi/pengumuman" class="sub-menu-item">Pengumuman</a></li>
-                        <li><a href="/informasi/produk" class="sub-menu-item">Dokumen Produk</a></li>
-                        <li><a href="/informasi/program-unggulan" class="sub-menu-item">Program Unggulan</a></li>
-                        <li><a href="/informasi/inovasi" class="sub-menu-item">Inovasi</a></li>
                         <li><a href="/informasi/agenda" class="sub-menu-item">Agenda</a></li>
+                        <li><a href="" class="sub-menu-item">Founding Fathers</a></li>
+                        <li><a href="" class="sub-menu-item">Berita Duka</a></li>
+                        {{-- <li><a href="" class="sub-menu-item">Milad ASN</a></li> --}}
+                        <li><a href="" class="sub-menu-item">Pegawai Purnabakti</a></li>
+                        <li><a href="" class="sub-menu-item">Instansi Terkait</a></li>
+                        <li><a href="/informasi/inovasi" class="sub-menu-item">Inovasi ASN</a></li>
+                        <li><a href="" class="sub-menu-item">Polling</a></li>
+                        {{-- <li><a href="/informasi/produk" class="sub-menu-item">Dokumen Produk</a></li>
+                        <li><a href="/informasi/program-unggulan" class="sub-menu-item">Program Unggulan</a></li>
+                        <li><a href="/informasi/inovasi" class="sub-menu-item">Inovasi</a></li> --}}
                     </ul>
                 </li>
 
-                <li class="has-submenu parent-menu-item">
+                {{-- <li class="has-submenu parent-menu-item">
                     <a href="javascript:void(0)">Layanan</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <li><a href="/layanan/semua" class="sub-menu-item">Layanan</a></li>
                         <li><a href="/layanan/regulasi" class="sub-menu-item">Regulasi</a></li>
                     </ul>
-                </li>
+                </li> --}}
 
                 <li class="has-submenu parent-parent-menu-item">
                     <a href="javascript:void(0)">Galeri</a><span class="menu-arrow"></span>
@@ -83,8 +90,16 @@
                     </ul>
                 </li>
 
+                <li class="has-submenu parent-parent-menu-item">
+                    <a href="javascript:void(0)">Download</a><span class="menu-arrow"></span>
+                    <ul class="submenu">
+                        <li><a href="" class="sub-menu-item">E-Book</a></li>
+                        <li><a href="" class="sub-menu-item">Peraturan</a></li>
+                    </ul>
+                </li>
+
                 <li class="has-submenu parent-menu-item">
-                    <a href="javascript:void(0)">Kontak</a><span class="menu-arrow"></span>
+                    <a href="javascript:void(0)">Kontak Kami</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <li><a href="/kontak/kontak-penting" class="sub-menu-item">Kontak Penting</a></li>
                         <li><a href="/kontak/hubungi-kami" class="sub-menu-item">Hubungi Kami</a></li>
