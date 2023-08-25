@@ -60,14 +60,6 @@
 
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="/profil/visi-misi" class="font-semibold hover:text-blue-korpri" aria-selected="false">
-                                Visi dan Misi
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-center mt-4">
-                        <div class="ml-3">
                             <a href="/profil/struktur-organisasi" class="font-semibold hover:text-blue-korpri" aria-selected="false">
                                 Struktur Organisasi
                             </a>
