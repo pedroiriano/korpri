@@ -75,18 +75,13 @@
 <section class="relative md:py-24 py-16">
     <div class="container">
         <div class="grid md:grid-cols-12 grid-cols-1 pb-8 items-end">
-            <div class="lg:col-span-8 md:col-span-6 md:text-left text-center">
+            <div class="lg:col-span-12 md:col-span-12 md:text-left text-center">
                 <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
                     Berita dan Pengumuman
                 </h3>
                 <p class="text-slate-400 max-w-xl">
                     Dapatkan informasi seputar KORPRI Kota Depok yang Anda perlukan di sini.
                 </p>
-            </div>
-            <div class="lg:col-span-4 md:col-span-6 md:text-right hidden md:block">
-                {{-- <a href="{{ route('news') }}" class="btn btn-link text-slate-400 hover:text-blue-korpri after:bg-blue-korpri duration-500 ease-in-out">
-                    Semua Berita <i class="uil uil-arrow-right align-middle"></i>
-                </a> --}}
             </div>
         </div>
 
@@ -209,11 +204,6 @@
 <section class="relative md:py-24 py-16">
     <div class="grid grid-cols-1 mt-8">
         <ul class="md:w-fit w-full mx-auto flex-wrap justify-center text-center p-3 bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-md" id="myTab" data-tabs-toggle="#StarterContent" role="tablist">
-            {{-- <li role="presentation" class="md:inline-block block md:w-fit w-full">
-                <button class="px-6 py-2 font-semibold rounded-md w-full hover:text-blue-korpri transition-all duration-500 ease-in-out" id="services-tab" data-tabs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="true">
-                    Layanan
-                </button>
-            </li> --}}
             <li role="presentation" class="md:inline-block block md:w-fit w-full">
                 <button class="px-6 py-2 font-semibold rounded-md w-full transition-all duration-500 ease-in-out" id="informations-tab" data-tabs-target="#informations" type="button" role="tab" aria-controls="informations" aria-selected="false">
                     Informasi
@@ -232,89 +222,11 @@
         </ul>
 
         <div id="StarterContent" class="mt-1">
-            {{-- <div class="" id="services" role="tabpanel" aria-labelledby="services-tab">
-                <div class="grid grid-cols-1">
-                    <div class="relative p-1 overflow-x-auto block w-full bg-white dark:bg-slate-900">
-                        <div class="container">
-                            <div class="grid md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
-                                    <div class="relative overflow-hidden text-transparent -m-3">
-                                        <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10 mx-auto"></i>
-                                        <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-blue-korpri rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
-                                            <i class="uil uil-university"></i>
-                                        </div>
-                                    </div>
-                                    <div class="mt-6">
-                                        <a href="https://depok.go.id/" class="text-lg font-medium group-hover:text-white transition-all duration-500 ease-in-out" target="_blank">
-                                            Layanan DSW
-                                        </a>
-                                        <p class="text-slate-400 group-hover:text-white/50 transition-all duration-500 ease-in-out mt-3">
-                                            Layanan Pemerintah Kota Depok.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
-                                    <div class="relative overflow-hidden text-transparent -m-3">
-                                        <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10 mx-auto"></i>
-                                        <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-blue-korpri rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
-                                            <i class="uil uil-building"></i>
-                                        </div>
-                                    </div>
-                                    <div class="mt-6">
-                                        <a href="{{ route('service') }}" class="text-lg font-medium group-hover:text-white transition-all duration-500 ease-in-out">
-                                            Layanan
-                                        </a>
-                                        <p class="text-slate-400 group-hover:text-white/50 transition-all duration-500 ease-in-out mt-3">
-                                            Layanan yang diberikan oleh {{ $shortWorkUnits }}.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-
             <div class="hidden" id="informations" role="tabpanel" aria-labelledby="informations-tab">
                 <div class="grid grid-cols-1">
                     <div class="relative p-1 overflow-x-auto block w-full bg-white dark:bg-slate-900">
                         <div class="container">
                             <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                                {{-- <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
-                                    <div class="relative overflow-hidden text-transparent -m-3">
-                                        <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10"></i>
-                                        <div class="absolute top-2/4 -translate-y-2/4 left-8 text-blue-korpri rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
-                                            <i class="uil uil-books"></i>
-                                        </div>
-                                    </div>
-                                    <div class="mt-6">
-                                        <a href="{{ route('product') }}" class="text-lg font-medium group-hover:text-white transition-all duration-500 ease-in-out">
-                                            Dokumen Produk
-                                        </a>
-                                        <p class="text-slate-400 group-hover:text-white/50 transition-all duration-500 ease-in-out mt-3">
-                                            Dokumen yang berupa Produk Hukum, Sakip dan Lakip {{ $shortWorkUnits }}.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
-                                    <div class="relative overflow-hidden text-transparent -m-3">
-                                        <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10"></i>
-                                        <div class="absolute top-2/4 -translate-y-2/4 left-8 text-blue-korpri rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
-                                            <i class="uil uil-analysis"></i>
-                                        </div>
-                                    </div>
-                                    <div class="mt-6">
-                                        <a href="{{ route('featured') }}" class="text-lg font-medium group-hover:text-white transition-all duration-500 ease-in-out">
-                                            Program Unggulan
-                                        </a>
-                                        <p class="text-slate-400 group-hover:text-white/50 transition-all duration-500 ease-in-out mt-3">
-                                            Program yang dikembangkan oleh {{ $shortWorkUnits }} untuk mencapai keunggulan yang ingin dicapai.
-                                        </p>
-                                    </div>
-                                </div> --}}
-
                                 <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-blue-korpri dark:hover:bg-blue-korpri transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
                                     <div class="relative overflow-hidden text-transparent -m-3">
                                         <i data-feather="hexagon" class="h-24 w-24 fill-blue-korpri/5 group-hover:fill-white/10"></i>

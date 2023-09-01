@@ -90,7 +90,7 @@
                     </h5>
                     <div class="flex items-center justify-center mt-8">
                         <div class="ml-3">
-                            <a href="/profil/tentang-kami" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                            <a href="{{ route('about') }}" class="font-semibold hover:text-blue-korpri" aria-selected="false">
                                 Tentang
                             </a>
                         </div>
@@ -98,7 +98,7 @@
 
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="/profil/struktur-organisasi" class="font-semibold hover:text-blue-korpri" aria-selected="true">
+                            <a href="{{ route('organization') }}" class="font-semibold hover:text-blue-korpri" aria-selected="true">
                                 Struktur Organisasi
                             </a>
                         </div>
@@ -106,8 +106,8 @@
 
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="/profil/tupoksi" class="font-semibold hover:text-blue-korpri" aria-selected="false">
-                                Tupoksi
+                            <a href="{{ route('duty') }}" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                                Tugas dan Fungsi
                             </a>
                         </div>
                     </div>

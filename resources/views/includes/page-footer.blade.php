@@ -49,18 +49,13 @@
                                     </a>
                                 </li>
                                 <li class="mt-[10px]">
-                                    <a href="{{ route('vision') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
-                                        <i class="uil uil-angle-right-b me-1"></i> Visi dan Misi
-                                    </a>
-                                </li>
-                                <li class="mt-[10px]">
                                     <a href="{{ route('organization') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
                                         <i class="uil uil-angle-right-b me-1"></i> Struktur Organisasi
                                     </a>
                                 </li>
                                 <li class="mt-[10px]">
                                     <a href="{{ route('duty') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
-                                        <i class="uil uil-angle-right-b me-1"></i> Tupoksi
+                                        <i class="uil uil-angle-right-b me-1"></i> Tugas dan Fungsi
                                     </a>
                                 </li>
                             </ul>
@@ -80,39 +75,8 @@
                                     </a>
                                 </li>
                                 <li class="mt-[10px]">
-                                    <a href="{{ route('product') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
-                                        <i class="uil uil-angle-right-b me-1"></i> Dokumen Produk
-                                    </a>
-                                </li>
-                                <li class="mt-[10px]">
-                                    <a href="{{ route('featured') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
-                                        <i class="uil uil-angle-right-b me-1"></i> Program Unggulan
-                                    </a>
-                                </li>
-                                <li class="mt-[10px]">
-                                    <a href="{{ route('innovation') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
-                                        <i class="uil uil-angle-right-b me-1"></i> Inovasi
-                                    </a>
-                                </li>
-                                <li class="mt-[10px]">
                                     <a href="{{ route('agenda') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
                                         <i class="uil uil-angle-right-b me-1"></i> Agenda
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="lg:col-span-2 md:col-span-6">
-                            <h5 class="tracking-[1px] text-gray-100 font-semibold">Layanan</h5>
-                            <ul class="list-none footer-list mt-6">
-                                <li>
-                                    <a href="{{ route('service') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
-                                        <i class="uil uil-angle-right-b me-1"></i> Layanan
-                                    </a>
-                                </li>
-                                <li class="mt-[10px]">
-                                    <a href="{{ route('regulation') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
-                                        <i class="uil uil-angle-right-b me-1"></i> Regulasi
                                     </a>
                                 </li>
                             </ul>
@@ -129,6 +93,22 @@
                                 <li class="mt-[10px]">
                                     <a href="{{ route('video') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
                                         <i class="uil uil-angle-right-b me-1"></i> Video
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="lg:col-span-2 md:col-span-6">
+                            <h5 class="tracking-[1px] text-gray-100 font-semibold">Download</h5>
+                            <ul class="list-none footer-list mt-6">
+                                <li>
+                                    <a href="{{ route('product') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
+                                        <i class="uil uil-angle-right-b me-1"></i> E-Book
+                                    </a>
+                                </li>
+                                <li class="mt-[10px]">
+                                    <a href="{{ route('regulation') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
+                                        <i class="uil uil-angle-right-b me-1"></i> Peraturan
                                     </a>
                                 </li>
                             </ul>
