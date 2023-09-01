@@ -180,7 +180,7 @@
                     </h5>
                     <div class="flex items-center justify-center mt-8">
                         <div class="ml-3">
-                            <a href="/publikasi/berita" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                            <a href="{{ route('news') }}" class="font-semibold hover:text-blue-korpri" aria-selected="false">
                                 Berita
                             </a>
                         </div>
@@ -188,7 +188,7 @@
                     
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="/publikasi/pengumuman" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                            <a href="{{ route('announcement') }}" class="font-semibold hover:text-blue-korpri" aria-selected="false">
                                 Pengumuman
                             </a>
                         </div>
@@ -196,32 +196,56 @@
 
                     <div class="flex items-center justify-center mt-4">
                         <div class="ml-3">
-                            <a href="/informasi/produk" class="font-semibold hover:text-blue-korpri" aria-selected="false">
-                                Dokumen Produk
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-center mt-4">
-                        <div class="ml-3">
-                            <a href="/informasi/program-unggulan" class="font-semibold hover:text-blue-korpri" aria-selected="false">
-                                Program Unggulan
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-center mt-4">
-                        <div class="ml-3">
-                            <a href="/informasi/inovasi" class="font-semibold hover:text-blue-korpri" aria-selected="false">
-                                Inovasi
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-center mt-4">
-                        <div class="ml-3">
-                            <a href="/informasi/agenda" class="font-semibold hover:text-blue-korpri" aria-selected="true">
+                            <a href="{{ route('agenda') }}" class="font-semibold hover:text-blue-korpri" aria-selected="true">
                                 Agenda
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center mt-4">
+                        <div class="ml-3">
+                            <a href="javascript:void(0)" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                                Founding Fathers
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center mt-4">
+                        <div class="ml-3">
+                            <a href="javascript:void(0)" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                                Berita Duka
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center mt-4">
+                        <div class="ml-3">
+                            <a href="javascript:void(0)" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                                Pegawai Purnabakti
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center mt-4">
+                        <div class="ml-3">
+                            <a href="javascript:void(0)" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                                Instansi Terkait
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center mt-4">
+                        <div class="ml-3">
+                            <a href="{{ route('innovation') }}" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                                Inovasi ASN
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center mt-4">
+                        <div class="ml-3">
+                            <a href="javascript:void(0)" class="font-semibold hover:text-blue-korpri" aria-selected="false">
+                                Polling
                             </a>
                         </div>
                     </div>
