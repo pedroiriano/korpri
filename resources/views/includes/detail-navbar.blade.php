@@ -48,46 +48,48 @@
                 <li class="has-submenu parent-menu-item">
                     <a href="javascript:void(0)">Profil</a><span class="menu-arrow"></span>
                     <ul class="submenu">
-                        <li><a href="/profil/tentang-kami" class="sub-menu-item">Tentang Kami</a></li>
-                        <li><a href="/profil/visi-misi" class="sub-menu-item">Visi dan Misi</a></li>
-                        <li><a href="/profil/struktur-organisasi" class="sub-menu-item">Struktur Organisasi</a></li>
-                        <li><a href="/profil/tupoksi" class="sub-menu-item">Tupoksi</a></li>
+                        <li><a href="{{ route('about') }}" class="sub-menu-item">Tentang Kami</a></li>
+                        <li><a href="{{ route('organization') }}" class="sub-menu-item">Struktur Organisasi</a></li>
+                        <li><a href="{{ route('duty') }}" class="sub-menu-item">Tugas dan Fungsi</a></li>
                     </ul>
                 </li>
 
                 <li class="has-submenu parent-menu-item">
                     <a href="javascript:void(0)">Informasi</a><span class="menu-arrow"></span>
                     <ul class="submenu">
-                        <li><a href="/publikasi/berita" class="sub-menu-item">Berita</a></li>
-                        <li><a href="/publikasi/pengumuman" class="sub-menu-item">Pengumuman</a></li>
-                        <li><a href="/informasi/produk" class="sub-menu-item">Dokumen Produk</a></li>
-                        <li><a href="/informasi/program-unggulan" class="sub-menu-item">Program Unggulan</a></li>
-                        <li><a href="/informasi/inovasi" class="sub-menu-item">Inovasi</a></li>
-                        <li><a href="/informasi/agenda" class="sub-menu-item">Agenda</a></li>
-                    </ul>
-                </li>
-
-                <li class="has-submenu parent-menu-item">
-                    <a href="javascript:void(0)">Layanan</a><span class="menu-arrow"></span>
-                    <ul class="submenu">
-                        <li><a href="/layanan/semua" class="sub-menu-item">Layanan</a></li>
-                        <li><a href="/layanan/regulasi" class="sub-menu-item">Regulasi</a></li>
+                        <li><a href="{{ route('news') }}" class="sub-menu-item">Berita</a></li>
+                        <li><a href="{{ route('announcement') }}" class="sub-menu-item">Pengumuman</a></li>
+                        <li><a href="{{ route('agenda') }}" class="sub-menu-item">Agenda</a></li>
+                        <li><a href="javascript:void(0)" class="sub-menu-item">Founding Fathers</a></li>
+                        <li><a href="javascript:void(0)" class="sub-menu-item">Berita Duka</a></li>
+                        <li><a href="javascript:void(0)" class="sub-menu-item">Pegawai Purnabakti</a></li>
+                        <li><a href="javascript:void(0)" class="sub-menu-item">Instansi Terkait</a></li>
+                        <li><a href="{{ route('innovation') }}" class="sub-menu-item">Inovasi ASN</a></li>
+                        <li><a href="javascript:void(0)" class="sub-menu-item">Polling</a></li>
                     </ul>
                 </li>
 
                 <li class="has-submenu parent-parent-menu-item">
                     <a href="javascript:void(0)">Galeri</a><span class="menu-arrow"></span>
                     <ul class="submenu">
-                        <li><a href="/publikasi/foto" class="sub-menu-item">Foto</a></li>
-                        <li><a href="/publikasi/video" class="sub-menu-item">Video</a></li>
+                        <li><a href="{{ route('photo') }}" class="sub-menu-item">Foto</a></li>
+                        <li><a href="{{ route('video') }}" class="sub-menu-item">Video</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu parent-parent-menu-item">
+                    <a href="javascript:void(0)">Download</a><span class="menu-arrow"></span>
+                    <ul class="submenu">
+                        <li><a href="{{ route('product') }}" class="sub-menu-item">E-Book</a></li>
+                        <li><a href="{{ route('regulation') }}" class="sub-menu-item">Peraturan</a></li>
                     </ul>
                 </li>
 
                 <li class="has-submenu parent-menu-item">
-                    <a href="javascript:void(0)">Kontak</a><span class="menu-arrow"></span>
+                    <a href="javascript:void(0)">Kontak Kami</a><span class="menu-arrow"></span>
                     <ul class="submenu">
-                        <li><a href="/kontak/kontak-penting" class="sub-menu-item">Kontak Penting</a></li>
-                        <li><a href="/kontak/hubungi-kami" class="sub-menu-item">Hubungi Kami</a></li>
+                        <li><a href="{{ route('important-contact') }}" class="sub-menu-item">Kontak Penting</a></li>
+                        <li><a href="{{ route('contact-us') }}" class="sub-menu-item">Hubungi Kami</a></li>
                     </ul>
                 </li>
             </ul>
