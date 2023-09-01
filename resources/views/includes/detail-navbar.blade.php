@@ -42,6 +42,38 @@
             </div>
         </div>
 
+        <!-- Social Media Start -->
+        <ul class="buy-button list-none mb-0">
+            <li class="inline mb-0">
+                <a href="https://www.facebook.com/PemerintahKotaDepok" target="_blank">
+                    <span class="login-btn-primary"><span class="btn btn-icon rounded-full bg-blue-korpri/5 hover:bg-blue-korpri border-blue-korpri/10 hover:border-blue-korpri text-blue-korpri hover:text-white"><i data-feather="facebook" class="h-4 w-4"></i></span></span>
+                    <span class="login-btn-light"><span class="btn btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i data-feather="facebook" class="h-4 w-4"></i></span></span>
+                </a>
+            </li>
+
+            <li class="inline mb-0">
+                <a href="https://www.instagram.com/pemkotdepok" target="_blank">
+                    <span class="login-btn-primary"><span class="btn btn-icon rounded-full bg-blue-korpri/5 hover:bg-blue-korpri border-blue-korpri/10 hover:border-blue-korpri text-blue-korpri hover:text-white"><i data-feather="instagram" class="h-4 w-4"></i></span></span>
+                    <span class="login-btn-light"><span class="btn btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i data-feather="instagram" class="h-4 w-4"></i></span></span>
+                </a>
+            </li>
+
+            <li class="inline mb-0">
+                <a href="https://twitter.com/pemkotdepok" target="_blank">
+                    <span class="login-btn-primary"><span class="btn btn-icon rounded-full bg-blue-korpri/5 hover:bg-blue-korpri border-blue-korpri/10 hover:border-blue-korpri text-blue-korpri hover:text-white"><i data-feather="twitter" class="h-4 w-4"></i></span></span>
+                    <span class="login-btn-light"><span class="btn btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i data-feather="twitter" class="h-4 w-4"></i></span></span>
+                </a>
+            </li>
+    
+            <li class="inline pl-1 mb-0">
+                <a href="https://www.youtube.com/@kominfodepok" target="_blank">
+                    <span class="login-btn-primary"><span class="btn btn-icon rounded-full bg-blue-korpri/5 hover:bg-blue-korpri border-blue-korpri/10 hover:border-blue-korpri text-blue-korpri hover:text-white"><i data-feather="youtube" class="h-4 w-4"></i></span></span>
+                    <span class="login-btn-light"><span class="btn btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i data-feather="youtube" class="h-4 w-4"></i></span></span>
+                </a>
+            </li>
+        </ul>
+        <!-- Social Media End -->
+
         <div id="navigation">
             <!-- Navigation Menu-->
             <ul class="navigation-menu justify-end">
