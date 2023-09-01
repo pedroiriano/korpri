@@ -23,6 +23,6 @@ class NewsController extends Controller
         curl_close($ch);
         $newsDetails = json_decode($response, TRUE);
 
-        return view('pages.publications.news-detail', compact('newsDetails'));
+        return view('pages.informations.news-detail', compact('newsDetails'));
     }
 }

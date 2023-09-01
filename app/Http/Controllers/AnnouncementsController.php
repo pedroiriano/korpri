@@ -23,6 +23,6 @@ class AnnouncementsController extends Controller
         curl_close($ch);
         $announcementDetails = json_decode($response, TRUE);
 
-        return view('pages.publications.announcement-detail', compact('announcementDetails'));
+        return view('pages.informations.announcement-detail', compact('announcementDetails'));
     }
 }

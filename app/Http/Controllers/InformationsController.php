@@ -11,10 +11,113 @@ use Illuminate\Pagination\LengthAwarePaginator;
 
 class InformationsController extends Controller
 {
+    public function news()
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/get_content?siteId='.config("constants.siteId").'&status=ST01&kanalType=K001&limit=1&offset=&category=&slug=&key=');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        $httpCode = curl_getinfo($ch , CURLINFO_HTTP_CODE);
+        $response = curl_exec($ch);
+        if ($response === false) 
+            $response = curl_error($ch);
+        curl_close($ch);
+        $latestNews = json_decode($response, TRUE);
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/get_content?siteId='.config("constants.siteId").'&status=ST01&kanalType=K001&limit=&offset=1&category=&slug=&key=');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        $httpCode = curl_getinfo($ch , CURLINFO_HTTP_CODE);
+        $response = curl_exec($ch);
+        if ($response === false) 
+            $response = curl_error($ch);
+        curl_close($ch);
+        $news = json_decode($response, TRUE);
+        $news = $this->array_pagination($news);
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/get_content?siteId='.config("constants.siteId").'&status=ST01&kanalType=K001&limit=&offset=&category=&slug=&key=');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        $httpCode = curl_getinfo($ch , CURLINFO_HTTP_CODE);
+        $response = curl_exec($ch);
+        if ($response === false) 
+            $response = curl_error($ch);
+        curl_close($ch);
+        $allNews = json_decode($response, TRUE);
+        $allNews = $this->array_pagination($allNews);
+
+        return view('pages.informations.news', compact('news', 'latestNews', 'allNews'));
+    }
+
+    public function announcement()
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/get_content?siteId='.config("constants.siteId").'&status=ST01&kanalType=K008&limit=&offset=&category=&slug=&key=');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        $httpCode = curl_getinfo($ch , CURLINFO_HTTP_CODE);
+        $response = curl_exec($ch);
+        if ($response === false) 
+            $response = curl_error($ch);
+        curl_close($ch);
+        $announcement = json_decode($response, TRUE);
+        $announcement = $this->array_pagination($announcement);
+        
+        return view('pages.informations.announcement', compact('announcement'));
+    }
+
+    public function agenda()
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/GetEvent?siteId='.config("constants.siteId").'&type=AG01&status=ST01&kanalType=K001&limit=&offset=&categoryId=659&slug=&key=');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        $httpCode = curl_getinfo($ch , CURLINFO_HTTP_CODE);
+        $response = curl_exec($ch);
+        if ($response === false)
+            $response = curl_error($ch);
+        curl_close($ch);
+        $generalAgenda = json_decode($response, TRUE);
+        $generalAgenda = $this->array_pagination($generalAgenda);
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/GetEvent?siteId='.config("constants.siteId").'&type=AG02&status=ST01&kanalType=K001&limit=&offset=&categoryId=659&slug=&key=');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        $httpCode = curl_getinfo($ch , CURLINFO_HTTP_CODE);
+        $response = curl_exec($ch);
+        if ($response === false)
+            $response = curl_error($ch);
+        curl_close($ch);
+        $specialAgenda = json_decode($response, TRUE);
+        $specialAgenda = $this->array_pagination($specialAgenda);
+
+        return view('pages.informations.agenda', compact('generalAgenda', 'specialAgenda'));
+    }
+
     public function product()
     {
         $ch = curl_init();
-        // curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/get_content?siteId='.config("constants.siteId").'&status=ST01&kanalType=K010&limit=10&offset=&category=369&slug=&key=');
         curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/get_content?siteId='.config("constants.siteId").'&status=ST01&kanalType=K010&limit=&offset=&category=&slug=&key=');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
@@ -69,41 +172,6 @@ class InformationsController extends Controller
         $innovation = $this->array_pagination($innovation);
 
         return view('pages.informations.innovation', compact('innovation'));
-    }
-
-    public function agenda()
-    {
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/GetEvent?siteId='.config("constants.siteId").'&type=AG01&status=ST01&kanalType=K001&limit=&offset=&categoryId=659&slug=&key=');
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-        $httpCode = curl_getinfo($ch , CURLINFO_HTTP_CODE);
-        $response = curl_exec($ch);
-        if ($response === false)
-            $response = curl_error($ch);
-        curl_close($ch);
-        $generalAgenda = json_decode($response, TRUE);
-        $generalAgenda = $this->array_pagination($generalAgenda);
-
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'https://cms.depok.go.id/ViewPortal/GetEvent?siteId='.config("constants.siteId").'&type=AG02&status=ST01&kanalType=K001&limit=&offset=&categoryId=659&slug=&key=');
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-        $httpCode = curl_getinfo($ch , CURLINFO_HTTP_CODE);
-        $response = curl_exec($ch);
-        if ($response === false)
-            $response = curl_error($ch);
-        curl_close($ch);
-        $specialAgenda = json_decode($response, TRUE);
-        $specialAgenda = $this->array_pagination($specialAgenda);
-
-        return view('pages.informations.agenda', compact('generalAgenda', 'specialAgenda'));
     }
 
     private function array_pagination($items, $perPage = 5, $page = null, $options = [])
