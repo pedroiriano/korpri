@@ -50,7 +50,7 @@
                     </ul>
 
                     <div id="StarterContent" class="mt-1">
-                        <div class="" id="general" role="tabpanel" aria-labelledby="general-tab">
+                        <div class="hidden" id="general" role="tabpanel" aria-labelledby="general-tab">
                             <div class="grid grid-cols-1">
                                 <div class="relative p-1 overflow-x-auto block w-full bg-white dark:bg-slate-900">
                                     <div class="container">

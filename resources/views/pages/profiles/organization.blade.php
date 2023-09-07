@@ -47,7 +47,19 @@
                         }
                     </style>
 
-                    <table id="example" class="display" style="width:100%">
+                    @if(!empty($diagram))
+                        @foreach($diagram as $dia)
+                            <div class="group relative block overflow-hidden transition-all duration-500">
+                                <a href="https://cms.depok.go.id/upload/{{ $dia['lampiran'] }}" class="lightbox transition-all duration-500 group-hover:scale-105" title="Diagram Organisasi">
+                                    <img loading="lazy" src="https://cms.depok.go.id/upload/{{ $dia['lampiran'] }}" class="" alt="Diagram Organisasi">
+                                </a>
+                            </div>
+                        @endforeach
+                    @else
+                        Koneksi API Terputus
+                    @endif
+
+                    {{-- <table id="example" class="display" style="width:100%">
                         <thead>
                             <tr>
                                 <th>Nama Pegawai</th>
@@ -79,7 +91,7 @@
                             @endforeach
                         </tbody>
                         @endif
-                    </table>
+                    </table> --}}
                 </div>
             </div>
 
